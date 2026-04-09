@@ -601,7 +601,7 @@ Wait, without changing anything else?? 😩❤️ <span class="wa-t g">1:24 PM �
         <form id="buyForm" novalidate>
           <div class="form-group"><label for="buyName">Full Name</label><input type="text" id="buyName" placeholder="e.g. Amara Johnson" autocomplete="name"/><p class="form-error" id="nameErr">Please enter your full name.</p></div>
           <div class="form-group"><label for="buyEmail">Email Address</label><input type="email" id="buyEmail" placeholder="you@example.com" autocomplete="email"/><p class="form-error" id="emailErr">Please enter a valid email address.</p></div>
-          <div class="form-group"><label for="buyWa">WhatsApp Number</label><input type="tel" id="buyWa" placeholder="+234 801 234 5678" autocomplete="tel"/><p class="form-error" id="waErr">Please enter your WhatsApp number.</p></div>
+         <div class="form-group"><label for="buyWa">WhatsApp Number <span style="font-weight:400;color:var(--text-muted);font-size:0.75rem;">(Optional)</span></label><input type="tel" id="buyWa" placeholder="+234 801 234 5678" autocomplete="tel"/><p class="form-error" id="waErr">Please enter your WhatsApp number.</p></div>
           <button type="submit" class="btn-submit">Proceed to Checkout →</button>
         </form>
         <p class="modal-privacy">🔒 Your details are safe with us. No spam, ever.</p>
@@ -649,7 +649,7 @@ document.getElementById('buyForm').addEventListener('submit',function(e){
     let ok=true;
     if(!n.value.trim()){n.classList.add('error');ne.classList.add('show');ok=false;}
     if(!em.value.trim()||!rx.test(em.value.trim())){em.classList.add('error');ee.classList.add('show');ok=false;}
-    if(!wa.value.trim()){wa.classList.add('error');we.classList.add('show');ok=false;}
+   
     
     if(!ok)return;
     
